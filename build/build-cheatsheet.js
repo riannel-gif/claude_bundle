@@ -27,7 +27,7 @@ push(
   { h3: "The craft — say these precisely" },
   { b: [
     "**Pacing problem** (tech exponential, law incremental) · **Collingridge dilemma** (easy to shape early / hard to predict; hard to change late) · **precaution vs permissionless innovation**.",
-    "**Five agile principles:** adaptive · outcome-based · risk-based · collaborative · sandboxes. Plus experimental, data-driven, self/co-regulation, international cooperation.",
+    "**Five agile principles** (Deloitte, *Future of Regulation*, 2018; adopted into WEF practice)**:** adaptive · outcome-based · risk-based · collaborative · sandboxes. Plus experimental, data-driven, self/co-regulation, international cooperation.",
     "**Anticipatory governance = foresight → experimentation → learning.** Mechanisms: sandboxes, sunset clauses, mandatory review, RIA, living guidance.",
     "**Soft law** (standards, codes, principles) = the on-ramp to hard law, not the absence of it. **RegTech** (comply) vs **SupTech** (supervise).",
     "**Sandbox** = controlled, time-limited test with real users, relaxed rules + safeguards. UK FCA 2016; 50+ jurisdictions; EU AI Act mandates national sandboxes by 2026. Always pair with a **codification plan**.",
@@ -78,7 +78,7 @@ push(
   ]},
   { h3: "Reports to name" },
   { b: [
-    "Agile Governance: Reimagining Policy-making in the 4IR · Agile Regulation for the 4IR — Toolkit for Regulators (2020, the five principles) · Global Technology Governance Report (2021) · The Regulatory Frontier / GRIP (2025) · Global Risks Report · Future of Jobs Report.",
+    "Agile Governance: Reimagining Policy-making in the 4IR · Agile Regulation for the 4IR — Toolkit for Regulators (2020) · Global Technology Governance Report (2021) · The Regulatory Frontier / GRIP (2025) · Global Risks Report · Future of Jobs Report.",
   ]},
   { h3: "Last-minute confidence check" },
   { callout: [
