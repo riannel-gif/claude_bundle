@@ -13,12 +13,15 @@ run — a specific person and their published work, for an exploratory meeting.
 
 Topic of this run: **Exploratory conversation with Maria Basso, World Economic
 Forum — Centre for AI Excellence (MINDS programme + the AI-First Operating
-System).** No job description; the goal is a role on her team, so the brief is
-built to be *additive* in the room and to surface the candidate's background.
+System).** No job description; the goal is a role on her team. The candidate's
+background is **policy in climate-resilient energy, utilities and health**, so the
+brief is built to (a) run as a peer exchange that connects Maria's work to the
+candidate's, and (b) position policy as the scarce asset in adopting AI across
+regulated, public-interest sectors.
 
-> **Personal layer:** §8 (Positioning) and a few questions in §7 contain
-> `[bracketed placeholders]` for the candidate's own background. Paste a 4–6 line
-> summary and rebuild to weave the specifics in.
+> **Personal layer:** §8.2 (the background→needs map) contains
+> `[bracketed placeholders]` for the candidate's specific proof points. Paste a
+> 4–6 line summary and rebuild to weave the specifics in.
 
 ## How to build
 

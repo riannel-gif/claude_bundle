@@ -141,8 +141,8 @@ function table(head, rows, widths) {
 const spacer = (h = 60) => new Paragraph({ spacing: { after: h }, children: [] });
 const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
 
-// Q&A block: bold question, answer paragraph(s), optional "say-this" line
-function qa(n, q, answerParas, sayThis) {
+// Q&A block: bold question, answer paragraph(s), optional trailing line with a label
+function qa(n, q, answerParas, sayThis, sayLabel = "Signal phrase — ") {
   const els = [];
   els.push(new Paragraph({
     spacing: { before: 150, after: 60, line: 264 },
@@ -151,7 +151,7 @@ function qa(n, q, answerParas, sayThis) {
   answerParas.forEach((a) => { els.push(P(a, { pp: { spacing: { after: 100, line: 272 } } })); });
   if (sayThis) els.push(new Paragraph({
     spacing: { after: 130, line: 262 },
-    children: [ new TextRun({ text: "Signal phrase — ", bold: true, italics: true, size: 19, color: ACCENT, font: "Georgia" }),
+    children: [ new TextRun({ text: sayLabel, bold: true, italics: true, size: 19, color: ACCENT, font: "Georgia" }),
       ...runs(sayThis, { size: 19, italics: true, color: MUTE, font: "Georgia" }) ],
   }));
   return els;
@@ -170,7 +170,7 @@ function build(blocks) {
     else if (b.n) els.push(...numbered(b.n, b.ref || "mainNum"));
     else if (b.callout) els.push(callout(b.callout), spacer(80));
     else if (b.table) els.push(table(b.table.head, b.table.rows, b.table.widths), spacer(80));
-    else if (b.qa) els.push(...qa(b.qa.n, b.qa.q, b.qa.a, b.qa.say));
+    else if (b.qa) els.push(...qa(b.qa.n, b.qa.q, b.qa.a, b.qa.say, b.qa.sayLabel));
     else if (b.spacer) els.push(spacer(b.spacer));
     else if (b.pageBreak) els.push(pageBreak());
   }

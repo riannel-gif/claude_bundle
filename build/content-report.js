@@ -17,7 +17,7 @@ push(
   ]},
   { h2: "The conversation in one breath" },
   { callout: [
-    "Maria Basso builds the bridge between frontier AI and the real economy — spotlighting AI that actually ships (MINDS) and codifying how enterprises rebuild themselves around intelligence (the AI-First Operating System). She came to it through energy systems and advanced manufacturing, not through a lab. That is your opening: you are not an “AI person” asking to be let in — you are someone who already lives at the intersection of technology and industrial reality, which is precisely the ground she works on.",
+    "Maria Basso builds the bridge between frontier AI and the real economy — spotlighting AI that actually ships (MINDS) and codifying how enterprises rebuild themselves around intelligence (the AI-First Operating System). She came to it through energy systems and advanced manufacturing, not through a lab. That is your opening: you are not an “AI person” asking to be let in — you are a policy specialist in the regulated, public-interest economy she is trying to transform (climate-resilient energy, utilities, health), where whether AI actually scales is decided by the enabling environment you know, not the model.",
   ]},
   { h2: "The three moves that win this conversation" },
   { n: [
@@ -58,7 +58,7 @@ push(
   { p: "With no JD, she is running four quiet assessments. Map your preparation to them:" },
   { table: { head: ["What she's really asking", "How you win it"], widths: [3800, 5560], rows: [
     ["Do you actually get this space, or are you AI-curious?", "Reference her specific work (§3, §4) and the real adoption debate (§6) with precision. Specificity beats enthusiasm."],
-    ["Would working with you make my work better?", "Bring a pattern, a question or a view she hasn’t heard. Be additive in the room itself — the conversation is the audition."],
+    ["Would working with you make my work better?", "Bring a pattern, a question or a view she hasn’t heard. You show this by how you engage — not by claiming it."],
     ["Are you a systems thinker or a hype-follower?", "Talk deployment, operating models, constraints and measurable outcomes. Name a failure mode honestly."],
     ["Where could you actually fit — and do you know?", "Have a clear, humble hypothesis about where you'd add value (§8), tied to her portfolio, not a generic “I’d love to help.”"],
   ]}},
@@ -112,7 +112,7 @@ push(
     "**The MINDS insight that flatters her thesis (say a version of this):** “The interesting thing about MINDS is that it quietly proves adoption is an operating-model problem, not a model problem. The winners didn’t have better AI — they rebuilt the workflow around it. Which is exactly why the AI-First blueprint had to exist.” This connects her two initiatives in one sentence and shows you see the strategy behind them.",
   ]},
   { h2: "3.4 Where you can be additive on MINDS" },
-  { p: "Exploratory conversations reward people who have *views* about the host’s work. Candidate angles to have ready (pick the ones that fit your background): how MINDS could go deeper in **energy and heavy industry** (harder to showcase than software, but higher-stakes); how to measure *durable* impact versus launch-moment metrics; how replicability actually works when the constraint is data or capital, not the model; and how the Global South gets into the cohort, not just cc’d. You are not criticising the programme — you are showing you could help it think." },
+  { p: "Exploratory conversations reward people who have *views* about the host’s work. Candidate angles to have ready (lean on your sectors): how MINDS could go deeper in **regulated, public-interest sectors — energy, utilities, health** (harder to showcase than software, but higher-stakes and more consequential); how to measure *durable* impact versus launch-moment metrics; how replicability actually works when what transfers is the policy and procurement scaffolding, not the model; and how the Global South and lower-capacity systems get into the cohort, not just cc’d. You are not criticising the programme — you are showing you could help it think." },
   { pageBreak: true },
 );
 
@@ -147,24 +147,27 @@ push(
 
 /* ============================ SECTION 5 ============================ */
 push(
-  { h1: "5 · Your Home Turf — AI × Energy and AI × Industry" },
-  { lead: "This is the section where you stop being “adjacent.” Maria’s foundations are energy systems and advanced manufacturing. If those are your worlds too, this is not a bridge you have to build — it is common ground you already stand on. Make it visible." },
-  { h2: "5.1 Why this is your advantage" },
-  { p: "Most people who approach an AI centre come from software or policy. You (and Maria) come through the *industrial and energy* economy — the harder, more physical, more consequential end of AI adoption, where a model has to survive contact with a grid, a factory or a supply chain. That is rarer and, to her, more credible. The move is not to out-AI the AI experts; it is to be the person who understands where AI meets the real, constrained, capital-intensive economy — because that is precisely where MINDS and the AI-First blueprint most need to prove themselves, and where showcase-friendly software wins run out." },
-  { h2: "5.2 AI × Energy — the two-way street (know both directions)" },
-  { p: "Maria co-authored **“AI’s energy dilemma: Challenges, opportunities, and a path forward”** (WEF, Jan 2025). The dilemma runs in both directions, and you should be able to speak to each:" },
+  { h1: "5 · Where Your World Meets Hers — Energy, Utilities, Health" },
+  { lead: "This is the section that turns you from “a policy person at an AI meeting” into someone standing on shared ground. Your domains — climate-resilient energy, utilities and health — are precisely the regulated, public-interest, capital-intensive sectors where Maria’s applied-AI work most needs to prove itself, and where a policy and enabling-environment lens is the deciding factor. Two of them (energy, health) are her strongest applied areas. Make the overlap visible, and steer the conversation onto it." },
+  { h2: "5.1 Why a policy background is an asset here, not a gap" },
+  { p: "It is tempting to think a policy person is adjacent to an *applications-and-impact* role. Flip it. Maria’s showcase wins are relatively easy in software; they are hard in energy, utilities and health — because those sectors are **regulated, safety-critical, slow-moving and public-interest.** In exactly those sectors, AI adoption is gated by the **enabling environment** — regulation, procurement, standards, tariffs, data governance, trust and public legitimacy — at least as much as by the model. That is your domain. You are the person who understands *why AI scales or stalls in the sectors where the stakes are highest* — which is the frontier where her two initiatives have the most to prove and the fewest natural translators." },
+  { callout: [
+    "**Connect it straight to her own thesis:** the AI-First blueprint says the adoption gap is a *systems-design* failure, not a technology one. In regulated sectors the “system” includes the *policy and market design* around the deployment. You are not contradicting her argument — you are extending it into the terrain where it bites hardest. That is the single most powerful dot you can connect for her.",
+  ]},
+  { h2: "5.2 AI × climate-resilient energy and utilities (your strongest overlap)" },
+  { p: "Maria co-authored **“AI’s energy dilemma: Challenges, opportunities, and a path forward”** (WEF, Jan 2025). The dilemma runs both ways, and it lands directly on your turf:" },
   { b: [
-    "**AI’s demand on energy.** Data centres consumed roughly **415 TWh globally in 2024**, projected to **more than double to ~945 TWh by 2030** — from about 1% of global electricity in 2022 toward 3%+ by 2030. AI-related electricity use may grow up to **50% a year** through 2030. In Ireland, data centres already take **>22%** of national electricity, heading for ~30%. This is now a first-order constraint on AI itself.",
-    "**AI’s gift to energy.** In the other direction, AI is already cutting energy use by **up to 60%** in some deployments — optimising energy storage, battery efficiency and smart-grid management. The prize is a **“net-positive”** trajectory: AI enabling more energy savings across the economy than its own compute consumes.",
-    "**The path forward** the article frames: regulation, financial incentives, technological innovation and market development — the classic multi-lever, multistakeholder answer the Forum specialises in.",
+    "**AI’s demand on energy.** Data centres consumed roughly **415 TWh globally in 2024**, projected to **more than double to ~945 TWh by 2030** — from ~1% of global electricity in 2022 toward 3%+ by 2030. AI electricity use may grow up to **50% a year** through 2030; in Ireland, data centres already take **>22%** of national electricity, heading for ~30%. A first-order stress on the very grids you work on.",
+    "**AI as a tool for resilience.** In the other direction, AI is already cutting energy use by **up to 60%** in some deployments and is a core instrument for grid optimisation, demand forecasting, distributed-energy orchestration, predictive maintenance of grid assets, and extreme-weather and outage prediction — i.e. **climate resilience**. The prize is a **“net-positive”** trajectory.",
+    "**Utilities are the stress test.** They are the archetype of hard AI adoption: regulated returns, safety-critical operations, legacy systems, public accountability — and now acute climate pressure. Whether AI actually gets deployed there is decided by **rate design, procurement rules, data governance and regulatory permission** — your world, not the model’s.",
   ]},
   { callout: [
-    "**The energy point that lands with her specifically:** “The AI-energy story is usually told as a threat — data-centre demand. The more useful framing is a systems one: AI is simultaneously the biggest new load *and* one of the best tools for grid and efficiency optimisation. Whether it nets positive is an operating-model and market-design question, not a technology one.” This mirrors both her energy roots and the AI-First thesis in a single move.",
+    "**The energy dot to connect (a version of this):** “In climate-resilient energy and utilities the same AI that strains the grid is also our best tool for grid resilience — and whether it nets positive this decade is a market-design and policy question, not a technology one. That’s the part of the dilemma I work on.” It mirrors her energy roots, her own article, and the AI-First thesis in a single move — and plants your flag.",
   ]},
-  { h2: "5.3 AI × Manufacturing and value chains" },
-  { p: "Maria entered the Forum through the **Advanced Manufacturing and Value Chains** platform — the world of factories, industrial operations, supply chains and the Global Lighthouse Network. Industrial AI is where “operations redesign” (building block 3) is hardest and most valuable: predictive maintenance, quality inspection, supply-chain optimisation (the Fujitsu MINDS case is exactly this), digital twins, and now agentic systems on the factory and logistics floor. If you have manufacturing, supply-chain, operations or industrial-tech experience, this is a direct line to her formative work — and a domain where “AI that ships and moves a number” is concrete, not hypothetical." },
+  { h2: "5.3 AI × health (your second overlap, and a MINDS heartland)" },
+  { p: "Health is a core MINDS sector — the flagship proof point is the **Saudi Ministry of Health** diabetic-foot screening pilot (−90% clinician time, −80% cost). Health is regulated, public-interest and trust-sensitive, so adoption is gated by exactly the levers you know: **clinical validation, reimbursement, data protection, procurement, and equity of access.** Your angle: you understand how AI actually reaches a patient in a real health system — where the enabling environment makes or breaks scale, and where a brilliant model that no regulator, payer or clinician trusts goes nowhere." },
   { h2: "5.4 The synthesis to own" },
-  { p: "Hold energy and industry together and you arrive at the position that is *distinctively yours*: **you understand AI adoption where the stakes are physical, capital-intensive and systemic — the real economy, not the demo.** That is the exact frontier where Maria’s two initiatives have the most to prove and the fewest natural experts. Do not claim to be an AI researcher. Claim to be the person who can make AI real in the parts of the economy that actually run the world — and let §7’s questions and §8’s proof points carry it." },
+  { p: "Put the three together and you arrive at the position that is *distinctively yours*: **you work the policy and enabling-environment side of the exact sectors — climate-resilient energy, utilities, health — where Maria’s applied-AI work is hardest to land and matters most.** You are not an AI specialist, and you should not pretend to be; the field has those. What is scarce is someone who can connect *her* dots (MINDS proves it, the AI-First blueprint patterns it) to *the reality that both hit a wall in regulated, public-interest sectors without the policy scaffolding you bring.* Be the translator between “AI that works in a demo” and “AI that is allowed, trusted and financed at scale” — and let §7’s questions and §8’s proof points carry it." },
   { pageBreak: true },
 );
 
