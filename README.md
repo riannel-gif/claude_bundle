@@ -1,66 +1,76 @@
-# Interview Prep Dossier — build + reusable workflow
+# Conversation / Interview Prep — build + reusable workflow
 
-This repo produces a **field-expert interview preparation dossier** (a ~35-page Word
-report plus a standalone cheat sheet) from a job description or work program.
+This repo produces a **field-expert preparation dossier** (a Word report plus a
+standalone cheat sheet) from a job description, work programme, or — as in this
+run — a specific person and their published work, for an exploratory meeting.
 
 ## Deliverables (this run)
 
 | File | What it is |
 |------|------------|
-| `GRIP_Interview_Dossier.docx` | ~35-page report: role decode, regulatory-innovation craft, five frontier-tech domains, WEF operating model, global landscape, ~25 expert Q&A with model answers, 5 worked consulting-style cases, glossary. |
-| `GRIP_Cheat_Sheet.docx` | 2–3 page last-minute cram sheet: thesis, must-knows, domain dilemmas, case frameworks, power phrases, and a confidence checklist. |
+| `Maria_Basso_Conversation_Brief.docx` | ~20-page brief for an exploratory conversation with **Maria Basso** (Head of AI Applications & Impact, WEF Centre for AI Excellence): who she is, the Centre, the **MINDS** programme, the **AI-First Operating System** blueprint, the AI×energy and AI×industry intersections, the enterprise-AI reality, the **questions to ask her**, your **positioning**, and a glossary/key-facts pack. |
+| `Maria_Basso_Cheat_Sheet.docx` | 2-page last-minute cram sheet: your pitch, who she is, MINDS, the five building blocks, your turf, your best questions, her likely questions, power phrases, and a confidence checklist. |
 
-Topic of this run: **Policy Lead, Global Regulatory Innovation Platform (GRIP),
-World Economic Forum — Centre for Frontier Technologies and Innovation.**
+Topic of this run: **Exploratory conversation with Maria Basso, World Economic
+Forum — Centre for AI Excellence (MINDS programme + the AI-First Operating
+System).** No job description; the goal is a role on her team, so the brief is
+built to be *additive* in the room and to surface the candidate's background.
+
+> **Personal layer:** §8 (Positioning) and a few questions in §7 contain
+> `[bracketed placeholders]` for the candidate's own background. Paste a 4–6 line
+> summary and rebuild to weave the specifics in.
 
 ## How to build
 
 ```bash
 npm install            # installs the `docx` package
-node build/build-report.js       GRIP_Interview_Dossier.docx
-node build/build-cheatsheet.js   GRIP_Cheat_Sheet.docx
+node build/build-report.js       Maria_Basso_Conversation_Brief.docx
+node build/build-cheatsheet.js   Maria_Basso_Cheat_Sheet.docx
 ```
 
-The content lives in `build/content-report.js` (Sections 0–5) and
-`build/content-qa.js` (Sections 6–8), written in a small block DSL. `build/lib.js`
+The content lives in `build/content-report.js` (Sections 0–6) and
+`build/content-qa.js` (Sections 7–9), written in a small block DSL. `build/lib.js`
 turns blocks into a styled `docx` document. Edit the content files and rebuild.
 
-> Note: LibreOffice-based PDF rendering was unavailable in the build sandbox, so a
-> visual PDF preview wasn't generated. The `.docx` files are valid and open in Word,
-> Google Docs, or Pages. To create a PDF: open in Word and Save As PDF, or run
-> `soffice --headless --convert-to pdf <file>.docx` where LibreOffice is available.
-> In Word, right-click the Table of Contents → **Update Field** to populate page numbers.
+> Note: to create a PDF, open the `.docx` in Word and Save As PDF, or run
+> `soffice --headless --convert-to pdf <file>.docx` where LibreOffice is
+> available. In Word, right-click the Table of Contents → **Update Field** to
+> populate page numbers.
 
-## The reusable workflow (run this on any JD)
+## The reusable workflow (run this on any target)
 
 This is the repeatable method behind the report — the "template" half of the ask.
 
-1. **Scope with the person first.** Confirm: now vs. template; their baseline and the
-   panel; where to weight depth (technical / landscape / cases / terminology); format;
-   timeline; length; reference features (TOC, glossary, cheat sheet); domain depth;
-   framework-vs-specifics balance. *Then get the actual JD.*
-2. **Deconstruct the JD.** Extract core domains, required competencies, tools/methods,
-   the implicit seniority bar, the likely panel, and each panelist's test.
-3. **Research thoroughly.** Full literature scan per domain (not just top hits):
-   technical foundations, state of the art, key debates, landscape/players, timeline.
+1. **Scope with the person first.** Confirm: interview vs. exploratory chat;
+   their goal (role / partnership / advisory / relationship); their background;
+   where to weight depth; format; length; reference features. *Then get the
+   actual target (JD, programme, or person + their work).*
+2. **Deconstruct the target.** For a person: their role, trajectory, what they
+   optimise for, their published work, and what the meeting is really testing.
+   For a JD: core domains, competencies, the panel, each seat's test.
+3. **Research thoroughly.** Full literature scan (not just top hits): the
+   person's own writing, the initiatives, the primary reports, the live debate.
    Prefer primary/authoritative sources; verify current specifics and dates.
-4. **Derive the expert's question set.** The questions a senior panel would actually
-   ask, mapped to the JD, each with a model answer and a "signal phrase."
-5. **Build the case layer** on top of the question set — worked, framework-driven.
-6. **Assemble** into a structured document: how-to → role decode → core craft →
-   domains → operating model → landscape → Q&A → cases → glossary, plus a cheat sheet.
+4. **Derive the question set.** For an exploratory chat, the questions *you ask*
+   — each engineered to be substantive *and* to reveal the candidate. For an
+   interview, the questions a panel would ask, with model answers.
+5. **Build the positioning layer** — the candidate's narrative, background→need
+   map, and answers to the questions they'll be asked.
+6. **Assemble** into a structured document: how-to → who/what you're meeting →
+   the institution → their initiatives → your home-turf intersections → the
+   live landscape → questions → positioning → glossary, plus a cheat sheet.
 7. **Deliver as `.docx`** and iterate on feedback.
 
-### Report skeleton (reused across topics)
+### Report skeleton (this run)
 
-- **§0** How to use + role in 60 seconds
-- **§1** The role & panel, decoded
-- **§2** The core craft / discipline of the field
-- **§3** The domains (common lens: state of play → core dilemma → landscape → open
-  questions → so-what)
-- **§4** The hiring organization's operating model
-- **§5** The wider landscape & geopolitics
-- **§6** The expert's question set (grouped, model answers, signal phrases)
-- **§7** Consulting-style case studies (structure-first, reusable frameworks)
-- **§8** Glossary
+- **§0** How to use + the conversation in 60 seconds
+- **§1** The person, decoded (trajectory, what they optimise for, what the chat tests)
+- **§2** The institution / operating context
+- **§3** Flagship initiative A (MINDS)
+- **§4** Flagship initiative B (AI-First Operating System)
+- **§5** The candidate's home-turf intersections (AI×energy, AI×industry)
+- **§6** The wider live landscape (enterprise-AI reality)
+- **§7** The questions to ask (intent + what each signals + follow-up)
+- **§8** Positioning the candidate (narrative, background→need, her questions, the close)
+- **§9** Glossary + key facts
 - **Cheat sheet** (separate file)

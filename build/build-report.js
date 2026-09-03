@@ -11,29 +11,29 @@ const qa = require("./content-qa.js").blocks;
 // ---------- Title page ----------
 const tp = [];
 tp.push(new Paragraph({ spacing: { before: 1400, after: 0 }, children: [
-  new TextRun({ text: "INTERVIEW PREPARATION DOSSIER", size: 24, bold: true, color: ACCENT, font: "Calibri", characterSpacing: 60 }),
+  new TextRun({ text: "CONVERSATION BRIEF", size: 24, bold: true, color: ACCENT, font: "Calibri", characterSpacing: 60 }),
 ]}));
 tp.push(new Paragraph({ spacing: { before: 40, after: 0 }, border: { bottom: { color: ACCENT, size: 14, style: L.docx.BorderStyle.SINGLE, space: 10 } }, children: [] }));
 tp.push(new Paragraph({ spacing: { before: 300, after: 0 }, children: [
-  new TextRun({ text: "Frontier Technology &", size: 60, bold: true, color: INK, font: "Calibri" }),
+  new TextRun({ text: "Applied AI, Impact &", size: 58, bold: true, color: INK, font: "Calibri" }),
 ]}));
 tp.push(new Paragraph({ spacing: { before: 0, after: 240 }, children: [
-  new TextRun({ text: "Regulatory Innovation", size: 60, bold: true, color: INK, font: "Calibri" }),
+  new TextRun({ text: "the AI-First Enterprise", size: 58, bold: true, color: INK, font: "Calibri" }),
 ]}));
 tp.push(new Paragraph({ spacing: { after: 120 }, children: [
-  new TextRun({ text: "A field-expert briefing for the role of", size: 24, color: MUTE, font: "Georgia", italics: true }),
+  new TextRun({ text: "An exploratory-conversation brief for a meeting with", size: 24, color: MUTE, font: "Georgia", italics: true }),
 ]}));
 tp.push(new Paragraph({ spacing: { after: 40 }, children: [
-  new TextRun({ text: "Policy Lead, Global Regulatory Innovation Platform (GRIP)", size: 26, bold: true, color: INK, font: "Calibri" }),
+  new TextRun({ text: "Maria Basso — Head of AI Applications & Impact", size: 26, bold: true, color: INK, font: "Calibri" }),
 ]}));
 tp.push(new Paragraph({ spacing: { after: 500 }, children: [
-  new TextRun({ text: "Centre for Frontier Technologies and Innovation · World Economic Forum · Geneva", size: 21, color: MUTE, font: "Georgia" }),
+  new TextRun({ text: "Centre for AI Excellence · World Economic Forum", size: 21, color: MUTE, font: "Georgia" }),
 ]}));
 tp.push(L.callout([
-  "Purpose: to equip an adjacent-but-fast-learning candidate to hold a substantive conversation with a senior expert panel — including management-consulting-style case questions — across the regulatory-innovation craft, five frontier-technology domains, the Forum’s operating model, and the global governance landscape.",
+  "Purpose: to prepare you to hold a sharp, additive conversation with Maria Basso about her work on the MINDS programme and the AI-First Operating System — and, with no job description in play, to arm you with the specific questions and positioning that surface your background and suitability for a role on her team.",
 ]));
 tp.push(new Paragraph({ spacing: { before: 700 }, children: [
-  new TextRun({ text: "Prepared September 2026 · Confidential study document", size: 18, color: MUTE, font: "Calibri" }),
+  new TextRun({ text: "Prepared September 2026 · Confidential preparation document", size: 18, color: MUTE, font: "Calibri" }),
 ]}));
 tp.push(new Paragraph({ children: [new PageBreak()] }));
 
@@ -53,22 +53,22 @@ toc.push(new Paragraph({ spacing: { before: 200 }, children: [
 toc.push(new Paragraph({ children: [new PageBreak()] }));
 
 const doc = new Document({
-  creator: "Interview Preparation",
-  title: "Frontier Technology & Regulatory Innovation — Interview Dossier",
-  description: "Interview preparation dossier for Policy Lead, GRIP, World Economic Forum.",
+  creator: "Conversation Preparation",
+  title: "Applied AI & the AI-First Enterprise — Conversation Brief (Maria Basso, WEF)",
+  description: "Exploratory-conversation brief for a meeting with Maria Basso, Centre for AI Excellence, World Economic Forum.",
   numbering: numberingConfig(),
   styles: {
     default: { document: { run: { font: "Georgia", size: 21, color: L.BODY } } },
   },
   sections: [{
     properties: { page: PAGE },
-    footers: { default: footer("Frontier Technology & Regulatory Innovation — Interview Dossier") },
+    footers: { default: footer("Conversation Brief — Maria Basso, WEF Centre for AI Excellence") },
     children: [ ...tp, ...toc, ...build(report), ...build(qa) ],
   }],
 });
 
 Packer.toBuffer(doc).then((buf) => {
-  const out = process.argv[2] || "GRIP_Interview_Dossier.docx";
+  const out = process.argv[2] || "Maria_Basso_Conversation_Brief.docx";
   fs.writeFileSync(out, buf);
   console.log("wrote", out, (buf.length / 1024).toFixed(0) + "KB");
 });
