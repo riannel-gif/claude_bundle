@@ -5,9 +5,9 @@ const push = (...b) => blocks.push(...b);
 
 /* ===================== SECTION 5 ===================== */
 push(
-  { h1: "5 · The World Economic Forum Operating Model" },
+  { h1: "6 · The World Economic Forum Operating Model" },
   { lead: "A consultant panel will test whether you understand the Forum as an operating system — its theory of change, its levers, and its limits — not just its brand." },
-  { h2: "5.1 What the Forum is, and how it actually creates impact" },
+  { h2: "6.1 What the Forum is, and how it actually creates impact" },
   { p: "The World Economic Forum is the international organisation for **public-private cooperation**, convening leaders from politics, business, academia and civil society to shape agendas. Crucially, it has **no regulatory or legislative power.** Its influence is *convening* power — and for frontier technology, where binding venues are fragmented or gridlocked, that is often the more useful power. Your job is not to make rules but to build the conditions in which better rules get made and adopted. The Forum’s levers of impact:" },
   { b: [
     "**Trusted convening** — bringing rivals and counterparts into the same room under Chatham House norms (Davos is the symbol; the year-round communities are the substance).",
@@ -16,12 +16,12 @@ push(
     "**Platforms and initiatives** — multi-year, multistakeholder vehicles (GRIP is one) that turn dialogue into pilots, commitments and toolkits.",
     "**The C4IR network** — government-hosted centres that localise and operationalise governance work in-country.",
   ]},
-  { h2: "5.2 Multistakeholder governance — and how to handle the critique" },
+  { h2: "6.2 Multistakeholder governance — and how to handle the critique" },
   { p: "The Forum’s theory of change is **multistakeholder governance**: convene enough of the relevant actors — states, firms, academia, civil society — and the resulting consensus is both more legitimate and more implementable than a state-only process. Know the critique, because a sharp panel will probe it: multistakeholderism can **dilute democratic accountability**, privilege **corporate voice**, lack **clear rules of representation and accountability**, and enable powerful actors to **forum-shop**. The Forum’s own **Global Redesign Initiative** put these questions on the table." },
   { callout: [
     "**How to answer a legitimacy challenge:** acknowledge it directly; argue that multistakeholder convening is a *complement* to democratic and multilateral processes, not a replacement; and stress the safeguards that earn legitimacy — transparency, genuinely inclusive representation (especially the Global South and civil society), and outputs governments freely adopt through their own accountable processes. Never sound defensive; sound like someone who has thought about the institution’s own limits.",
   ]},
-  { h2: "5.3 The Agile Governance lineage and the reports to name" },
+  { h2: "6.3 The Agile Governance lineage and the reports to name" },
   { table: { head: ["Forum work", "What it established", "Use it to…"], widths: [3050, 3550, 2760], rows: [
     ["Agile Governance: Reimagining Policy-making in the 4IR (white paper)", "The founding case for adaptive, human-centred policy-making.", "Show you know the intellectual roots of GRIP."],
     ["Agile Regulation for the 4IR — A Toolkit for Regulators (2020)", "A practical toolkit building on the five-principles approach.", "Speak the Forum’s house vocabulary precisely."],
@@ -33,20 +33,20 @@ push(
   { pageBreak: true },
 
   /* ===================== SECTION 6 ===================== */
-  { h1: "6 · Global Regulatory Landscape and Geopolitics" },
+  { h1: "7 · Global Regulatory Landscape and Geopolitics" },
   { lead: "Frontier-tech governance is now geopolitics by other means. You need the map of who regulates how, why they diverge, and where the openings for cooperation lie." },
-  { h2: "6.1 The three rulebooks (plus the middle path)" },
+  { h2: "7.1 The three rulebooks (plus the middle path)" },
   { table: { head: ["Jurisdiction", "Philosophy", "Signature instruments", "Optimises for"], widths: [1450, 3050, 2650, 2210], rows: [
     ["European Union", "Rights- and risk-based; precautionary; comprehensive horizontal law.", "AI Act; GDPR; Digital Services/Markets Acts; product-liability regime.", "Fundamental rights, safety, the single market — and regulatory export."],
     ["United States", "Market-led; sectoral; light-touch; innovation-first.", "Executive orders; NIST frameworks; agency guidance; state laws.", "Innovation speed, competitiveness, private-sector leadership."],
     ["China", "State-directed; vertical and targeted; control-oriented.", "Algorithm/deep-synthesis/generative-AI rules; CAC filings.", "State control, social stability, strategic industrial policy."],
     ["United Kingdom", "Principles-based, pro-innovation; empowers existing regulators.", "Cross-sector principles; sector regulators; AI Security Institute.", "Agility and inward investment without a single big statute."],
   ]}},
-  { h2: "6.2 The Brussels effect and its limits" },
+  { h2: "7.2 The Brussels effect and its limits" },
   { p: "The **Brussels effect** (Anu Bradford) is the mechanism by which EU rules become de facto global standards: to access the EU’s large market, firms adopt EU-compliant practices everywhere (the *de facto* effect), and other governments then copy the EU template (the *de jure* effect). GDPR is the archetype; the AI Act is the test case. The sophisticated, current view — voice it — is that the effect is **real but weakening**: the US and China are actively pursuing rival models, the EU itself is under competitiveness pressure to simplify (the Draghi-report anxiety), and for a borderless technology a territorial theory of influence explains less than it used to. The frontier is shifting from *exporting regulation* to *exercising governance*." },
-  { h2: "6.3 Fragmentation versus interoperability" },
+  { h2: "7.3 Fragmentation versus interoperability" },
   { p: "The meta-problem your role addresses is **regulatory fragmentation**: the same product can be lawful in one jurisdiction, require a conformity assessment in a second, an algorithmic audit in a third and a state filing in a fourth. Fragmentation raises compliance cost, entrenches large incumbents (only they can afford four rulebooks), enables **forum-shopping**, and slows beneficial diffusion. The prize is **interoperability** — not identical rules, but rules *compatible in effect* through mutual recognition, common standards and minimum baselines. Convening for interoperability is precisely the Forum’s comparative advantage." },
-  { h2: "6.4 The institutional map" },
+  { h2: "7.4 The institutional map" },
   { table: { head: ["Body", "Role in frontier-tech governance"], widths: [2650, 6710], rows: [
     ["OECD", "The reference house for regulatory policy and international regulatory co-operation; OECD AI Principles; the AI Policy Observatory; anticipatory-governance work."],
     ["ISO / IEC / IEEE / CEN-CENELEC", "Technical standard-setting — the soft-law machinery regulators reference to give agile rules teeth (e.g. AI Act harmonised standards)."],
@@ -55,16 +55,16 @@ push(
     ["Council of Europe", "The Framework Convention on AI — the first binding international AI treaty, rights-anchored and open beyond Europe."],
     ["NIST", "De facto global influence via frameworks (AI RMF) and standards (PQC) despite being a national body."],
   ]}},
-  { h2: "6.5 The geopolitics of the frontier" },
+  { h2: "7.5 The geopolitics of the frontier" },
   { p: "Two forces to name. **Techno-nationalism / tech sovereignty:** states increasingly treat frontier technologies as strategic national assets — via industrial policy, subsidies and **export controls** (the “small yard, high fence” doctrine of restricting a narrow set of critical technologies while keeping the rest open), with **standard-setting itself now a geopolitical contest**. **The commons counter-pressure:** some frontier domains — space, climate intervention, catastrophic bio-risk — are irreducibly global and cannot be secured by any state alone, and the **Global South** risks being rule-taker rather than rule-maker (the digital and capability divide). Your workstream lives in the tension between competitive advantage and shared-risk cooperation; holding both truths at once is the mark of a serious frontier-governance strategist." },
   { pageBreak: true },
 
   /* ===================== SECTION 7 — the consulting bridge ===================== */
-  { h1: "7 · Regulatory Transformation — the Systems Lens" },
+  { h1: "8 · Regulatory Transformation — the Systems Lens" },
   { lead: "This chapter recasts everything above as a transformation problem, using the exact frameworks a management-consulting panel reasons with. It is your highest-leverage material: it makes governance legible to ex-consultants, and it maps directly onto your own background in industry transformation and replication." },
   { p: "The core move: **treat a country or sector going from an ungoverned frontier technology to responsible, scaled adoption as running a transformation** — with a maturity curve, a capability gap, a scaling slump, an ecosystem to orchestrate, and reference cases to replicate. Every sub-section below has a manufacturing-transformation analogue your panel will recognise, and a governance translation you can deploy." },
 
-  { h2: "7.1 The regulatory maturity curve" },
+  { h2: "8.1 The regulatory maturity curve" },
   { p: "Just as manufacturers move up a maturity ladder (standardised → digitised → connected → predictive → autonomous), a jurisdiction’s capacity to govern emerging technology can be staged. A useful five-level curve to offer in a case:" },
   { table: { head: ["Level", "Regulatory maturity", "Characteristic"], widths: [900, 2600, 5860], rows: [
     ["1", "Absent", "No rules; the technology outpaces any framework (the default frontier state)."],
@@ -75,7 +75,7 @@ push(
   ]}},
   { p: "The strategic point: most frontier domains sit at Level 1–2, GRIP’s ambition is to move jurisdictions to Level 4–5, and the Readiness Index is the diagnostic that scores where a country sits. This staging is also how you *sequence* your workstream — you cannot sell an adaptive regime to a jurisdiction that lacks basic institutional capacity, any more than you sell an autonomous factory to a plant that has not yet digitised." },
 
-  { h2: "7.2 The capability gap, not the technology gap" },
+  { h2: "8.2 The capability gap, not the technology gap" },
   { p: "Borrow the single most important insight in your manufacturing notes and apply it to governance: **jurisdictions that fail to govern emerging technology usually have a capability gap, not a rules gap.** The bottleneck is rarely the absence of a statute; it is the absence of the *capability* to design, run and adapt one — technical literacy inside the regulator, cross-agency coordination, data and analytics, foresight capacity, and workforce. Three capability layers, mirroring the manufacturing model:" },
   { b: [
     "**Technical / institutional capability** — can the regulator understand the technology, run a sandbox, read a model evaluation, coordinate across agencies?",
@@ -84,7 +84,7 @@ push(
   ]},
   { p: "So the right question in a case is rarely “what rule should they write?” It is “**what capability are they missing, and how do we build it?**” That reframe is exactly what a consultant panel wants to hear, and it is where your regulatory-innovation toolkit (sandboxes to build technical capacity, standards to import expertise, international cooperation to borrow capability) becomes the answer." },
 
-  { h2: "7.3 The governance scaling slump" },
+  { h2: "8.3 The governance scaling slump" },
   { p: "Manufacturers stall in “pilot purgatory” — successful pilots that never scale because they were built as standalone experiments, not as replicable systems, and because integration across functions is the expensive, un-owned part. Governance has an exact analogue:" },
   { b: [
     "**Pilot purgatory in policy:** a sandbox or pilot proves a concept but never graduates into permanent, scaled rules — because no one designed the codification path and no one owns cross-agency integration.",
@@ -93,7 +93,7 @@ push(
   ]},
   { p: "The lever that breaks the slump is the same in both worlds: **cross-functional governance with a real mandate, shared metrics, and a codification/replication plan built in from the pilot stage.**" },
 
-  { h2: "7.4 Ecosystem orchestration" },
+  { h2: "8.4 Ecosystem orchestration" },
   { p: "No single actor governs a frontier technology; an *ecosystem* does. Orchestration means **designing the conditions and incentives under which independent actors — with different and sometimes conflicting interests — collectively produce an outcome none could produce alone.** The actor groups in a regulatory ecosystem:" },
   { table: { head: ["Actor group", "Role", "What they need to move"], widths: [2500, 3700, 3160], rows: [
     ["Regulators & governments", "Set rules, standards, mandates.", "Political cover, evidence, capability."],
@@ -106,7 +106,7 @@ push(
   ]}},
   { p: "The orchestration insight that connects directly to your own background: **sequencing.** You do not need every actor at once — you identify the minimum set of *first-mover commitments* that make others follow (a lead government commits, two or three industry players join, standards bodies codify, financiers price it in), and you engineer the government’s role to taper as the ecosystem matures — heavy scaffolding and de-risking early, graduating to lighter, self- and co-regulation as capability builds. This is the regulatory expression of exactly the industry-transformation sequencing you studied in the renewable-energy transition." },
 
-  { h2: "7.5 Reference cases and replication logic" },
+  { h2: "8.5 Reference cases and replication logic" },
   { p: "GRIP’s Playbook, and the “scalable, replicable model” in your JD, both rest on one idea: a **reference case** — a real-world implementation documented rigorously enough to serve as a blueprint others can learn from, adapt and replicate. For a reference case to be valuable it must capture three things:" },
   { n: [
     "**What was done** — the actual intervention.",
@@ -118,7 +118,7 @@ push(
     "**The line to land with the panel:** “A reference case isn’t a success story — it’s a transferable model with the conditional logic made explicit. You don’t export the rule; you export the method: if context X, do Y; if W, adapt by Z. That’s what makes a governance approach replicable across jurisdictions, and it’s the work I’ve done before in industrial transformation.”",
   ]},
 
-  { h2: "7.6 Transformation design applied to your workstream" },
+  { h2: "8.6 Transformation design applied to your workstream" },
   { p: "Finally, the design sequence a consultant uses to run any transformation — and which you can apply verbatim to standing up a frontier-tech governance initiative:" },
   { n: [
     "**Diagnostic** — where a jurisdiction/sector is on the maturity curve; its capabilities (technical, institutional, workforce); the gap between start-point and goal.",

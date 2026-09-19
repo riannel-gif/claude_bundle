@@ -6,11 +6,13 @@ const {
 } = L;
 
 const mods = [
-  ...require("./a1-role-and-craft.js").blocks,
-  ...require("./a2-domains.js").blocks,
-  ...require("./a3-wef-landscape-transformation.js").blocks,
-  ...require("./a5-appendices.js").blocks,
-  ...require("./a4-glossary.js").blocks,
+  ...require("./a1-role-and-craft.js").blocks,        // 0-1
+  ...require("./a0-foundations.js").blocks,           // 2 Foundational Concepts
+  ...require("./a1b-discipline.js").blocks,           // 3 Regulatory-Innovation Discipline
+  ...require("./a2-domains.js").blocks,               // 4 Domains (deep) + 5 Convergence
+  ...require("./a3-wef-landscape-transformation.js").blocks, // 6-8
+  ...require("./a5-appendices.js").blocks,            // Appendices
+  ...require("./a4-glossary.js").blocks,              // 9 Glossary
 ];
 
 // ---------- Title page ----------
@@ -35,7 +37,7 @@ tp.push(new Paragraph({ spacing: { after: 480 }, children: [
   new TextRun({ text: "Centre for Frontier Technologies and Innovation · World Economic Forum · Geneva", size: 21, color: MUTE, font: "Georgia" }),
 ]}));
 tp.push(L.callout([
-  "Part A of a two-part dossier. This volume is the subject-matter depth: the regulatory-innovation discipline, the five frontier-technology domains at technical and governance depth, the WEF operating model, the global landscape, and a regulatory-transformation chapter written in the language a management-consulting panel reasons with. Part B (companion) covers the case-interview, frameworks and behavioural preparation.",
+  "Part A of a two-part dossier. This volume is the subject-matter depth: foundational concepts, the regulatory-innovation discipline, the five frontier-technology domains with genuine ‘how it works’ technology primers and their governance, the WEF operating model, the global landscape, and a regulatory-transformation chapter written in the language a management-consulting panel reasons with. Part B (companion) covers the case-interview, frameworks and behavioural preparation.",
 ]));
 tp.push(new Paragraph({ spacing: { before: 640 }, children: [
   new TextRun({ text: "Confidential study document", size: 18, color: MUTE, font: "Calibri" }),

@@ -70,7 +70,7 @@ push(
     ["Interoperability ladder", "Cross-jurisdiction divergence.", "Terminology → standards → mutual recognition → baselines → law."],
     ["O-SEE-C (sandbox design)", "Designing a sandbox.", "Objective · Scope · Exemptions · safEguards · Codification."],
     ["C-TAP (crisis response)", "A frontier-tech incident.", "Convene fast · Target failure point · Absorb responsible majority · Persist into rules."],
-    ["Instrument-selection grid", "Choosing how to regulate.", "Match instrument to risk profile and uncertainty (Part A §2.10)."],
+    ["Instrument-selection grid", "Choosing how to regulate.", "Match instrument to risk profile and uncertainty (Part A §3.10)."],
   ]}},
   { h2: "B1.4 Quantifying in a policy case" },
   { p: "Consultant panels love a candidate who can put a number on a governance problem. The move is a **driver tree** built from public anchors you carry in your head. Example — *sizing the cost of AI regulatory fragmentation to a mid-size firm*: (annual compliance cost per jurisdiction) × (number of divergent regimes it must meet) × (share of that cost that is duplicative rather than substantive), plus the opportunity cost of delayed market entry (months delayed × monthly revenue at stake). You will not have exact figures; the panel wants a **sensible structure, explicit assumptions, and an order-of-magnitude answer**, delivered confidently and then sanity-checked. Always end a number with “does that pass the smell test?” and adjust." },

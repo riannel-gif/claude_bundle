@@ -68,7 +68,7 @@ const glossary = [
 ];
 
 blocks.push(
-  { h1: "8 · Glossary" },
+  { h1: "9 · Glossary" },
   { lead: "The working vocabulary of frontier-tech regulatory innovation. Fluency with these terms is the fastest signal that you belong in the conversation." },
 );
 for (const [term, def] of glossary) blocks.push({ p: `**${term}.** ${def}` });
