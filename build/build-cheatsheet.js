@@ -55,6 +55,13 @@ push(
     "**Build from zero — 100 days:** Listen & map (1–30) → Focus & frame on 2–3 beachheads (31–60) → Prove with one convening + one product (61–100). Evidence before scale.",
     "**Prioritise domains:** gap severity · right to convene · partner readiness · replicability.",
   ]},
+  { h3: "The consultant panel (they're ex-McKinsey)" },
+  { b: [
+    "**Score = structure > recall.** They grade how you break down a messy question, prioritise (80/20), hypothesise, quantify, and communicate.",
+    "**Communicate top-down:** answer first (Pyramid Principle), signpost (“three things…”), synthesise not summarise, quantify directionally.",
+    "**Case drill (6 steps):** take a moment → structure (MECE, bespoke) → hypothesise → prioritise → work the branches → synthesise (recommendation + risk + next step). **Never framework-dump.**",
+    "**PEI (≈50% of interview), 4 dimensions (2025):** Leadership (direction, mobilise), Connection (persuade/influence), Drive (initiative, build from scratch), Growth (resistance, learn from failure). 8 stories, 2 per dimension, SPAR, first-person “I”, granular detail (expect 10–25 probes).",
+  ]},
   { h3: "Measuring impact (avoid vanity metrics)" },
   { b: [
     "**Adoption** (did regulators take it up?) → **Outcome** (did a real decision change?) → **System** (did readiness/interoperability improve?). Define at design time; report honestly.",
