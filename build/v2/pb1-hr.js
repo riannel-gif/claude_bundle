@@ -1,102 +1,101 @@
-// Part B, section 1: the HR screening interview.
+// Part B, section 1: HR screen, fully scripted (internal candidate).
 const blocks = [];
 const push = (...b) => blocks.push(...b);
 
-// Q(id, question, testing, answer paragraphs[], avoid)
-const Q = (id, q, testing, ans, avoid) => {
-  push({ h3: `HR ${id}. ${q}` });
-  push({ p: `**What they are checking:** ${testing}` });
-  ans.forEach((a, i) => push({ p: i === 0 ? `**Model answer:** ${a}` : a }));
-  if (avoid) push({ p: `**Avoid:** ${avoid}` });
+// S(id, question, testing, headline, paragraphs[], evidence)
+const S = (id, q, testing, headline, paras, evidence) => {
+  push({ h3: `${id}. ${q}` });
+  push({ p: `**What they are listening for:** ${testing}` });
+  push({ p: `**Headline (20 seconds):** ${headline}` });
+  paras.forEach((t, i) => push({ p: i === 0 ? `**Full answer:** ${t}` : t }));
+  if (evidence) push({ p: `**Evidence used:** ${evidence}` });
 };
 
 push(
-  { h1: "B1 · The HR Screening Interview" },
-  { lead: "The HR screen is short and decisive. It checks motivation, fit and credibility, the competencies the Forum screens for (collaboration, working style, ethics, impact), and practical conditions. Answers should be 60 to 90 seconds, specific, and anchored in the three messages (B0, §2)." },
-  { p: "Placeholders in square brackets mark facts only you can supply. Where your situation would change an answer (for example, if you are applying from inside the Forum), adjust accordingly." },
+  { h1: "B1 · The HR Screen" },
+  { lead: "As an internal candidate, the HR screen will test three things: that you are moving towards this role rather than away from your current one, that you understand its scope precisely, and that you show the Forum’s core competencies (collaboration, integrity, impact). Scripts are sized for 60 to 120 seconds." },
 );
 
-Q(1, "Walk me through your background.",
-  "A clear narrative that explains why this role is a logical next step, in about two minutes.",
-  ["I’ve spent my career where technology, policy and law meet. I trained as a lawyer and started in Brussels, researching how China had sequenced its renewable-energy transformation and building a framework other countries could replicate. At Herbert Smith Freehills I did comparative analysis of energy and renewables regulation across jurisdictions, mostly at EU level, and at the UN in Geneva I developed implementation guidance and training for governments on international agreements.",
-   "I then moved to the Gulf with FGS Global, where I advised senior government leaders on the design and sequencing of flagship multistakeholder platforms, including the Global Cybersecurity Forum, the Saudi Green Initiative and the Future Investment Initiative, and worked on NEOM’s food and biotechnology programme within its bespoke regulatory environment. After a period advising climate and circular-economy ventures on market entry, I now lead a climate and healthcare-continuity workstream and help build a cross-sector community of business leaders on workforce heat resilience.",
-   "The thread is translating complex technical and regulatory questions into platforms and products that decision-makers act on. This role brings those strands together: frontier technology, regulatory innovation and multistakeholder convening."],
-  "A chronological list of jobs without the thread; spending more than a sentence on any single role.");
+S("HR1", "Walk me through your background.",
+  "A narrative with a thread, ending naturally at this role.",
+  "My career has been about one question from different angles: how you design the conditions for a new industry or technology to scale, and what role regulation plays in that. I have looked at it as a researcher, a lawyer, an adviser to governments, and now inside the Forum.",
+  ["My career has been about one question, approached from different angles: how you design the conditions for a new industry or technology to scale, and what role regulation plays in that.",
+   "I started in Brussels at IEEP, working on how China had sequenced its national renewable-energy transformation, with the aim of building a replication logic other countries could use. That gave me the analytical frame I still use. I then practised as a lawyer: at Herbert Smith Freehills on comparative energy and renewables regulation across jurisdictions, at the UN in Geneva on implementing international agreements, and at Fortior on market access for energy, technology and blockchain clients, at the moment when regulators were first working out what to do with crypto-assets.",
+   "In the Gulf, at FGS Global, I moved from analysing regimes to helping build them: advising senior government leaders on the design and sequencing of flagship platforms such as the Global Cybersecurity Forum, the Saudi Green Initiative and the Future Investment Initiative, and assessing what would make NEOM credible to foreign investors and companies. After a period advising climate and digital-asset ventures on market entry, including a carbon-credit digital asset across the Swiss and Danish markets, I joined the Forum, where I lead a climate and healthcare-continuity workstream and help build a community of business leaders on workforce heat resilience.",
+   "So this role brings the strands together: frontier technology, regulatory design, and the Forum’s convening model."],
+  "The full career arc, compressed; each role reduced to what it contributes to the thread.");
 
-Q(2, "Why the World Economic Forum?",
-  "Genuine understanding of what the Forum is and does, beyond the brand.",
-  ["Because the Forum can do something no government or company can do alone: bring regulators, companies, researchers and civil society into the same conversation before positions harden, and turn that into frameworks people actually adopt. On frontier technologies that is exactly what is missing. The quantum team’s 2024 work with the UK Financial Conduct Authority on quantum security for finance is a good example: a regulator and industry co-developing principles and a roadmap, before the deadlines bite. I want to work where that kind of convening happens.",
-   "If you are applying from inside the Forum: frame it as having seen the model work from the inside, and wanting to apply it to the technologies where it is most needed."],
-  "Talking about Davos, prestige or ‘global impact’ in general terms.");
+S("HR2", "Why do you want this role?",
+  "Genuine motivation and a clear link to your background. (This is the short form; the full version is Panel P1.)",
+  "Because it sits exactly where I have been working: how technology transformations are designed, and how regulation can enable them rather than trail them. And because the Forum is at the point where that question needs to move from ideas into its frontier-technology programmes, starting with quantum.",
+  ["Three reasons.",
+   "The first is the intersection. My work has been about how transformations are designed: early on, how China sequenced its renewable-energy build-out, with the state de-risking first and then engineering its own step-back; later, how regulators improvised with crypto, and what made a greenfield regime like NEOM credible to investors. The pattern is consistent: governance works when it is designed into a transformation, and fails when it arrives afterwards.",
+   "The second is timing. GRIP has built a strong thesis, regulation as strategic infrastructure, around AI, health and finance. The next step is to make that concrete inside the Forum’s frontier-technology programmes, and quantum is the natural first test because its security transition already has deadlines.",
+   "The third is what I would learn: genuine depth in the technologies themselves, by working inside the teams that lead the Forum’s work on them, and the experience of building a global regulator community rather than working in one market.",
+   "So it is the right problem, at the right moment, in a place where I already know how to get things done."],
+  "Thesis A; crypto and NEOM in one sentence each; the Forum’s next problem; growth.");
 
-Q(3, "Why this role?",
-  "That you understand what the role actually is, and that it fits your strengths.",
-  ["Three reasons. First, the role sits exactly at my intersection: technology, regulation and convening. Second, it is a build role: a new, cross-cutting workstream, which suits me, because I have repeatedly helped design platforms from concept. Third, the problem matters: the gap between how fast frontier technologies are moving and how prepared governments are is widening, and quantum makes it concrete, with post-quantum migration deadlines already set for 2030 and 2035."],
-  "Describing the role as ‘developing regulation’ or ‘running sandboxes’; the Forum does neither.");
+S("HR3", "Why move now, from your current team?",
+  "That you are moving towards something, and that you will leave well.",
+  "Because this role is the most direct application of what I have been building towards, and the quantum collaboration is starting now. My current work has given me exactly the experience it needs: leading a workstream end to end and building a senior community.",
+  ["Because this role is the most direct application of what I have been building towards, and the timing matters: the frontier-technology workstream is being created now, and the quantum collaboration is about to start. Joining at the design stage is where I can add most.",
+   "My current role has been the right preparation. Leading the climate and healthcare-continuity workstream has taught me how to set a research agenda, run a programme end to end inside the Forum, and produce knowledge products for senior audiences; building the heat-resilience community has taught me what it takes to keep senior business leaders engaged. Those are precisely the muscles this role uses.",
+   "I would make sure the transition is clean: [a clear handover of the workstream and the community to (name/role), timed with the team’s calendar]. Moving within the Forum should strengthen both teams, not leave a gap."],
+  "Current Forum role; handover plan (to complete).");
 
-Q(4, "What do you understand the role to be?",
-  "Accuracy. HR will listen for whether you have misread the job.",
-  ["I see it as building a bridge between GRIP and the Forum’s frontier-technology teams: quantum, autonomous mobility and robotics, biotechnology and planetary systems. In practice that means connecting the two; integrating regulatory and governance questions into the teams’ programmes early; convening regulators, companies (including legal and compliance leaders), academia and civil society; translating technical developments into practical governance insight through knowledge products; and codifying what works so it can be reused across teams and jurisdictions. My understanding is that the first collaboration is likely to be with the quantum team."],
-  "Claiming ownership of GRIP’s index or flagship paper, which sit with the core team.");
+S("HR4", "What would you bring from your current role at the Forum?",
+  "Institutional knowledge as an asset, without over-claiming.",
+  "Three things a new hire would take months to learn: how initiatives actually move from scoping to adoption here, how to work across centres, and how to build products and convenings that senior leaders use.",
+  ["Three things a new hire would take months to learn.",
+   "First, how initiatives actually move here: from scoping with members and constituents, through co-design with a community, to a launch moment and then adoption. That matters because the role’s central idea, integrating regulatory thinking early, only works if you intervene at scoping, and I know where scoping happens.",
+   "Second, how to work across centres. My current work already depends on collaborating beyond my own team, and I understand how credit, decision rights and calendars shape what is possible in a matrix.",
+   "Third, how to produce for senior audiences: briefings, positioning and thought leadership for high-level convenings, where the test is whether a leader can use it in the room.",
+   "What I would not claim is technical depth in quantum or robotics; that sits with those teams. My value is connecting their depth to regulators, companies and governments."],
+  "Current Forum role; initiative lifecycle (Part A, Part II §5).");
 
-Q(5, "This is a temporary role to May 2027. How do you feel about that?",
-  "Commitment for the full period, and realism.",
-  ["It suits the mandate. A build role with a fixed horizon focuses the work: the job is to design a collaboration model, prove it with quantum, extend it to another team, and document it so it outlasts the contract. I would plan the work backwards from May 2027 with that handover in mind. Beyond that, I am interested in continuing in this field, and I would hope the results speak for themselves."],
-  "Signalling that you see it only as a stepping stone.");
+S("HR5", "What do you understand the role to be?",
+  "Precise scope. The most common error would be describing it as writing regulation.",
+  "A bridge between GRIP and the Forum’s frontier-technology teams: integrating governance questions into their programmes early, convening regulators and industry around each technology, translating developments into practical insight, and turning what works into a method the Forum can reuse. Starting with quantum.",
+  ["I see it as building a bridge between GRIP and the Forum’s frontier-technology teams: quantum, autonomous mobility and robotics, biotechnology and planetary systems. In practice that means five things: connecting governance expertise with technology expertise inside the same programmes; integrating regulatory questions at the design stage of those programmes; convening regulators, companies (including legal and compliance leaders), academia and civil society around each technology; translating technical developments into practical governance insight through knowledge products; and codifying what works so it can be reused across teams and jurisdictions.",
+   "Equally important is what it is not. The Forum does not write regulation or run sandboxes; governments do. GRIP’s index and paper sit with the core team. The role is about the Forum’s convening and co-design model applied to frontier technology, and my understanding is that it starts with quantum."],
+  "Part A, The Role, Correctly Scoped.");
 
-Q(6, "Why are you looking to move now?",
-  "A positive reason to move towards this role, not away from the current one.",
-  ["My current work has given me hands-on experience of leading a workstream end to end and building a community of senior business leaders. The natural next step is to apply those skills to the questions I have been closest to throughout my career: how regulation and governance keep pace with technology. This role is a rare fit for that, and the timing is right because the quantum governance agenda is moving now. [Adjust if there is a contract end date or internal context.]"],
-  "Any criticism of your current employer.");
+S("HR6", "How do you work with very senior leaders?",
+  "Credibility with ministers, CEOs and heads of agency.",
+  "By being useful and precise: leading with the decision or the ask, bringing a perspective they cannot get from their own organisation, and being clear about what I know and what I do not.",
+  ["At FGS I advised senior government leaders directly on the design of flagship platforms, and in my current role I prepare briefings and positioning for senior engagement at high-level convenings. Three principles guide me.",
+   "Lead with the decision or the ask: senior people give you two minutes, so the first sentence has to carry the point.",
+   "Bring something they cannot get from inside their own organisation: usually a comparison across jurisdictions or sectors, or an honest read of how others will receive their proposal.",
+   "Be precise about the limits of what you know. With senior leaders, credibility is built by accuracy and usefulness, not by volume. [Optional: one concrete example of a briefing or piece of advice that changed a senior decision.]"],
+  "FGS; current senior briefings.");
 
-Q(7, "Tell me about a time you achieved something across teams where you had no formal authority.",
-  "Collaboration in a matrix: the defining condition of this role.",
-  ["Use a real example from FGS or your current role. Structure: the objective; the teams or organisations involved and why they did not naturally align; what you did to create shared ownership (for example, framing the objective in each team’s terms, giving credit, agreeing decision rights early); the result. Close with the lesson: in a matrix you earn influence by making the other teams’ work more useful to them, not by owning territory."],
-  "Saying ‘we’ throughout; the interviewer needs to hear what you did.");
+S("HR7", "Tell me about a disagreement with a stakeholder and how you handled it.",
+  "Maturity, listening, and keeping relationships intact.",
+  "[One-sentence summary: who, what the disagreement was about, and how it was resolved.]",
+  ["[Suggested source: at FGS, a disagreement with a senior counterpart on how to position or sequence a platform; or in your current role, a partner who wanted a different emphasis in a knowledge product.]",
+   "Script structure to complete: “The situation was [context]. [Stakeholder] wanted [their position], because [their underlying concern]. I thought [your position], because [reason]. Rather than argue the position, I [what you did to understand their concern, e.g. a one-to-one conversation]. That showed me that what they needed was [underlying need]. So I proposed [option that met both needs]. The result was [outcome], and the relationship [how it continued]. What I took from it is that most disagreements on substance are disagreements about risk, and you resolve them by addressing the risk, not the position.”"],
+  "To complete; pick a story not used in P21–P24.");
 
-Q(8, "Tell me about a disagreement with a stakeholder and how you handled it.",
-  "Maturity, listening, and ability to keep relationships intact.",
-  ["Choose a disagreement over substance with a senior counterpart (for example, on how to position or sequence an initiative). Show that you first understood their underlying concern, reframed around a shared objective, proposed an option that met both needs, and maintained the relationship afterwards. Be specific about what you said."],
-  "A story where the other person was simply wrong and you won.");
+S("HR8", "The Forum works with powerful partners. How do you protect its neutrality?",
+  "Integrity, a core Forum competency, and especially relevant for regulatory work.",
+  "By remembering that the Forum’s value to regulators depends entirely on being trusted as neutral. Partners’ evidence is welcome; partners’ advocacy is not the Forum’s voice.",
+  ["The Forum’s value to regulators depends on being trusted as a neutral space. So I draw a clear line: companies’ evidence is welcome and necessary (regulators need to know what implementation actually costs), but no output should present one member’s position as the community’s view.",
+   "In practice that means transparency about who is in the room, a balance of perspectives including civil society, and drafting discipline so conclusions follow evidence. And if a partner’s aim is simply to lobby against a rule, I would say directly that the Forum is not the right channel, early and privately, before it becomes a problem in the room."],
+  "Part A, Part II §4 (legitimacy).");
 
-Q(9, "How do you work with very senior leaders: ministers, CEOs, heads of agencies?",
-  "Credibility and judgement with senior public and private leaders.",
-  ["At FGS I advised senior government leaders directly, and in my current role I prepare briefings and positioning for senior engagement at high-level convenings. Three principles guide me: respect their time by leading with the decision or the ask; bring something they cannot get elsewhere, such as a view across jurisdictions or sectors; and be precise about what I know and do not know. With senior leaders, credibility is built by being useful and accurate, not by volume."],
-  null);
+S("HR9", "How do you know whether your work has had impact?",
+  "Impact orientation beyond activity.",
+  "I measure at three levels, defined at the start: adoption, outcome and system change. Events and downloads are activity; a regulator using a framework in its guidance is impact.",
+  ["I distinguish three levels and define them when the work is designed, not afterwards. Adoption: did the people it was built for take it up? Outcome: did it change a decision, a policy, an investment or a practice? System: did it change how the field works, for example by making regulators in different countries align?",
+   "For a Forum knowledge product, downloads and sessions are activity. A supervisor citing it, a company changing its migration plan because of it, or a government using it in a strategy is impact. [Optional: one example from your current workstream of where you saw real uptake.]"],
+  "Current role (optional example).");
 
-Q(10, "Tell me about working across cultures.",
-  "Evidence of international range and sensitivity.",
-  ["My career has spanned Brussels, Geneva and the Gulf, with counterparts across Europe, the Middle East and Asia. In the Gulf in particular I learned how much relationships, hierarchy and timing shape decisions, and that the same proposal lands very differently depending on who is in the room and how it is sequenced. [Add languages and one concrete example.]"],
-  null);
-
-Q(11, "How do you manage several complex projects at once, and make sure the detail is right?",
-  "The JD explicitly asks for project management and attention to detail.",
-  ["Describe your actual system: a clear plan with milestones worked back from external deadlines (for example, a launch moment); a weekly review of risks and dependencies; explicit owners for every action; and a final quality check on anything external, especially facts, figures and names. Give one example where catching a detail mattered."],
-  "Claiming you simply work harder; they want a method.");
-
-Q(12, "Tell me about a time your integrity was tested, or you were asked to do something you were uncomfortable with.",
-  "Ethics: the Forum works with powerful partners and must protect its neutrality.",
-  ["Choose a real situation, for example pressure to overstate a result or to shape content in a partner’s favour. Show how you raised it, the alternative you proposed, and the outcome. Link it to the Forum: its value depends on being a trusted, neutral platform, so content cannot become advocacy for any one member."],
-  null);
-
-Q(13, "How do you know whether your work has had impact?",
-  "Impact orientation beyond activity metrics.",
-  ["I distinguish three levels. Adoption: did the people it was meant for take it up? Outcome: did it change a decision, a policy, an investment or a practice? System: did it shift how the field works? For a knowledge product, downloads and events are activity; a regulator citing it in guidance, or a company changing its roadmap because of it, is impact. I define those measures when a project is designed, not afterwards."],
-  null);
-
-Q(14, "I see a gap between mid-2018 and late 2019. Can you tell me about it?",
-  "Only whether there is a straightforward explanation.",
-  ["Prepare a truthful, one or two sentence explanation, stated calmly, followed by what you took from it and how it led to the next role. [To be completed by you.]"],
-  "Over-explaining or sounding defensive.");
-
-Q(15, "Practical questions: location, permit, availability, salary expectations.",
-  "That there are no blockers.",
-  ["**Location:** confirm you can be based in Geneva from [date]. **Permit:** state your status clearly [e.g. EU/EFTA citizenship or current Swiss permit]. **Availability:** your notice period [x weeks]. **Salary:** if asked, give a researched range for a Geneva-based policy lead role, rather than a single figure, and say you are open to discussing the full package. Do not anchor low because the role is temporary; the scope is senior."],
-  null);
-
-Q(16, "What questions do you have for me?",
-  "Curiosity and preparation. Ask about process and context, not substance better suited to the panel.",
-  ["Good questions for HR: What does the panel process look like, and who is on it? How does the Forum typically support people in temporary roles to continue their work beyond the contract? How is this role expected to work day to day with the Centre for Frontier Technologies and Innovation? What are the next steps and timeline?"],
+S("HR10", "What questions do you have for me?",
+  "Preparation; save substance for the panel.",
+  "Keep this to process and context.",
+  ["What will the panel format be, and who will be on it?",
+   "What is the timeline to a decision, and how would the transition from my current team typically be handled?",
+   "How is this role expected to work day to day with the Centre for Frontier Technologies and Innovation?"],
   null);
 
 push({ pageBreak: true });

@@ -9,7 +9,7 @@ Forum's frontier-technology teams, starting with quantum.
 | File | What it is |
 |------|------------|
 | `GRIP_PartA_KnowledgeBase.docx` | Knowledge base (~52–55 pages in Word). How to use; the role correctly scoped; Part I Foundational Concepts; Part II The Ecosystem (the Forum, its frontier-technology teams and their outputs, external actors, how initiatives run); Part III Key Technologies (quantum as the flagship deep-dive, then autonomous mobility and robotics, biotechnology, space, AI as convergence); Part IV Governance Approaches; Part V Barriers, Tensions and Geopolitics; Glossary. |
-| `GRIP_PartB_InterviewCasePrep.docx` | Interview and case preparation (~29–30 pages). The process and positioning; the HR screen (16 questions); the panel question bank derived from the JD (26 questions); four case studies, the first written as a full work product; behavioural preparation; questions to ask; final checklist. |
+| `GRIP_PartB_InterviewCasePrep.docx` | Interview preparation (~35 pages), fully scripted in the candidate’s voice: positioning, answer architecture and evidence map; HR screen for an internal candidate (10 scripts); panel (24 scripts: motivation, strategy, knowledge products, convening, technology, judgement, experience stories); four case studies, the first written as a full work product; questions to ask; final checklist. |
 | `GRIP_Cheat_Sheet.docx` | Two-page revision sheet. |
 
 Superseded versions are kept in `archive/v1/`.
